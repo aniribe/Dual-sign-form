@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta");
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mukta", sans-serif;
+  height: 100vh;
+  /* min-height: 550px; */
+  background-image: url("images/adult.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  /* position: relative; */
+}
+
+/* a {
+  text-decoration: none;
+  color: #444444;
+} */
+
+.login-reg-panel {
+  position: relative;
+  width: 70%;
+  height: 400px;
+  /* text-align: center; */
+  color: #b8b8b8;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+
+  /* right: 0; */
+  /* left: 0; */
+  /* margin: auto; */
+
+  background-color: rgba(30, 30, 30, 0.9);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.login-reg-panel input[type="button"] {
+  /* position: relative; */
+  /* display: none; */
+}
+
+/* .login-reg-panel {
+} */
+
+/* .login-reg-panel #label-login,
+.login-reg-panel #label-register {
+  border: 1px solid #9e9e9e;
+  padding: 0 5px;
+  width: 150px;
+  display: block;
+  text-align: center;
+  border-radius: 3px;
+  cursor: pointer;
+} */
+
+.login-info-box,
+.register-info-box {
+  position: relative;
+  width: 40%;
+  /* padding: 0 50px; */
+  top: 20%;
+
+  /* text-align: left; */
+}
+
+.login-info-box {
+  /* left: 0; */
+}
+
+.register-info-box {
+  /* position: absolute;
+  width: 30%;
+  padding: 0 50px;
+  top: 20%; */
+  /* right: 0; */
+  /* text-align: left; */
+}
+
+.login-reg-panel #log-reg-show,
+.login-reg-panel #log-login-show {
+  width: 150px;
+  font-size: 14px;
+  color: #b8b8b8;
+  padding: 10px 5px;
+  border: 1px solid #9e9e9e;
+  border-radius: 3px;
+  background: transparent;
+  /* display: block; */
+  /* text-align: center; */
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 3px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* .right-log {
+  right: 50px !important;
+} */
+
+.white-panel {
+  position: absolute;
+  top: -50px;
+  width: 40%;
+  height: 500px;
+  background-color: rgb(219, 216, 216);
+  overflow: hidden;
+  z-index: 0;
+  transition: all 0.8s ease-in-out;
+  right: calc(60% - 40px);
+}
+
+.white-panel.right {
+  right: 50px;
+  /* transition: all 1.5s ease-in-out; */
+  /* animation: animate 3s ease-in-out; */
+}
+
+@keyframes animate {
+  /* from {
+  }
+
+  to {
+    right: 50px;
+  } */
+
+  0% {
+  }
+
+  100% {
+    right: 50px;
+  }
+}
+
+.login-show,
+.register-show {
+  /* z-index: 1; */
+  display: none;
+  /* opacity: 0; */
+
+  color: #242424;
+  text-align: left;
+  padding: 50px 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.register-show.active {
+  display: inherit;
+}
+
+.login-show.active {
+  display: inherit;
+}
+
+/* .show-log-panel {
+  display: block;
+  opacity: 0.9;
+} */
+
+.login-show input[type="text"],
+.login-show input[type="password"],
+.register-show input[type="text"],
+.register-show input[type="password"] {
+  position: relative;
+  width: 90%;
+  /* display: block; */
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #b5b5b5;
+  outline: none;
+}
+
+.login-show input[type="button"],
+.register-show input[type="button"] {
+  max-width: 150px;
+  width: 100%;
+  background: #444444;
+  color: #f9f9f9;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  float: right;
+  cursor: pointer;
+  outline: none;
+}
+
+/* .register-show input[type="button"] {
+  max-width: 150px;
+  width: 100%;
+  background: #444444;
+  color: #f9f9f9;
+  border: none;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  float: right;
+  cursor: pointer;
+} */
+
+.login-show a {
+  display: inline-block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #444444;
+}
+
+/* .register-show input[type="text"],
+.register-show input[type="password"] {
+  width: 100%;
+  display: block;
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px solid #b5b5b5;
+  outline: none;
+} */
+
+/* .credit {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #3b3b25;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  z-index: 99;
+}
+a {
+  text-decoration: none;
+  color: #eaeaea;
+} */
