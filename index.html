@@ -7,47 +7,56 @@
     <title>Dual sign form</title>
   </head>
   <body>
+    <div class="overlay"></div>
     <div class="login-reg-panel">
       <div class="login-info-box">
         <h2>Have an account?</h2>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         </p>
-        <!-- <label for="" id="label-register">Login</label> -->
-
         <button id="log-reg-show">Login</button>
-        <!-- <input type="button" name="active-log-panel" id="log-reg-show" /> -->
       </div>
 
       <div class="register-info-box">
         <h2>Don't have an account?</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <!-- <label for=log-login-show"" id="label-login">Register</label> -->
-
         <button id="log-login-show">Register</button>
-
-        <!-- <input
-          type="button"
-          name="active-log-panel"
-          id="log-login-show"
-          
-        /> -->
       </div>
 
       <div class="white-panel" id="white-panel">
         <div class="login-show active" id="login-show">
           <h2>Login</h2>
-          <input type="text" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+          <div class="floating">
+            <label for="">Email</label>
+            <input type="text" />
+          </div>
+
+          <div class="floating">
+            <label for="">Password</label>
+            <input type="password" />
+          </div>
+
           <input type="button" value="Login" />
           <a href="#">Forgot password?</a>
         </div>
 
         <div class="register-show" id="register-show">
           <h2>Register</h2>
-          <input type="text" placeholder="Email" />
-          <input type="password" placeholder="Password" />
-          <input type="password" placeholder="Confirm Password" />
+          <div class="floating">
+            <label for="">Email</label>
+            <input type="text" />
+          </div>
+
+          <div class="floating">
+            <label for="">Password</label>
+            <input type="password" />
+          </div>
+
+          <div class="floating">
+            <label for="">Confirm Password</label>
+            <input type="password" />
+          </div>
+
           <input type="button" value="Register" />
         </div>
       </div>
